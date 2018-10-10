@@ -12,13 +12,8 @@ var yourFortune = document.querySelector('#fortune-wrapper p span');
 var fortuneTextPlaceholder = document.createTextNode('');
 yourFortune.appendChild(fortuneTextPlaceholder);
 
-//OPTION 2
-//var fortuneTextPlaceholder = document.getElementById('fortune-wrapper');
-//var yourFortune = document.querySelector('p span');
-//var fortuneTextPlaceholder = document.createTextNode('');
-//fortuneTextPlaceholder.appendChild(yourFortune);
-
 var fortuneText = document.createTextNode(magicFortunes[0]);
 yourFortune.appendChild(fortuneText);
 
-console.log(fortuneText);
+var ourButton = document.getElementById('generator-button');
+ourButton.removeChild(button);
