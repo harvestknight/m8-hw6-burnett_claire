@@ -2,7 +2,20 @@ var magicFortunes = ['It is certain.','It is decidedly so.', 'Without a doubt.',
 
 var shakeBall = function() {
     magicFortunes.sort(function(a, b){return 0.5 - Math.random()});
+    console.log(magicFortunes);
 };
 
 var button = document.getElementsByTagName('button')[0];
 button.onclick = shakeBall;
+
+var yourFortune = document.querySelector('#fortune-wrapper p span');
+var fortuneTextPlaceholder = document.createTextNode('');
+yourFortune.appendChild(fortuneTextPlaceholder);
+
+//OPTION 2
+//var fortuneTextPlaceholder = document.getElementById('fortune-wrapper');
+//var yourFortune = document.querySelector('p span');
+//var fortuneTextPlaceholder = document.createTextNode('');
+//fortuneTextPlaceholder.appendChild(yourFortune);
+
+
