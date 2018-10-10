@@ -17,3 +17,5 @@ yourFortune.appendChild(fortuneText);
 
 var ourButton = document.getElementById('generator-button');
 ourButton.removeChild(button);
+
+yourFortune.classList.add('fortune-show');
